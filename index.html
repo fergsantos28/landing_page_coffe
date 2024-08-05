@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Coffe Shop</title>
 </head>
 
@@ -16,37 +17,39 @@
             <img src="imagens/logocafe_editado_menor.png" alt="logo cafe">
         </picture>
         <nav>
-            <a href="">Menu</a>
-            <a href="">Galeria</a>
-            <a href="">Curiosidade</a>
+            <a data-aos="fade-up" data-aos-duration="1200" href="">Menu</a>
+            <a data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" href="">Galeria</a>
+            <a data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"href="">Curiosidade</a>
         </nav>
     </header>
     <main>
         <section>
-            <div class="content">
-                <h2>Cafe de exelente qualidade</h2>
-                <h1>Iniciamos com um propósito: oferecer uma experiência de excepcional<span>café.</span></h1>
-                <hr>
-                <p>Desde o primeiro grão até a última gota, nossa missão é proporcionar uma jornada sensorial única.</p>
-                <p>Nosso café não é apenas uma bebida, é uma celebração de aromas, sabores e momentos especiais que queremos compartilhar com você.</p>
+            <div  class="content">
+                <h2 data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Cafe de exelente qualidade</h2>
+                <h1 data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="600">Iniciamos com um propósito: oferecer uma experiência de excepcional<span>café.</span></h1>
+                <hr data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="700">
+                <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="900" >Desde o primeiro grão até a última gota, nossa missão é proporcionar uma jornada sensorial única.</p>
+                <p data-aos="flip-down" data-aos-duration="1200" data-aos-delay="900">Nosso café não é apenas uma bebida, é uma celebração de aromas, sabores e momentos especiais que queremos compartilhar com você.</p>
                 <div class="icons">
-                    <div class="cafe"> <i class="fa-solid fa-mug-hot"></i> <span>Saborei</span> </div>
-                    <div class="play"> <i class="fa-solid fa-circle-play"></i> <span>Veja o video</span> </div>
+                    <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100" class="cafe"> <i class="fa-solid fa-mug-hot"></i> <span>Saborei</span> </div>
+                    <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1100" class="play"> <i class="fa-solid fa-circle-play"></i> <span>Veja o video</span> </div>
 
 
                 </div>
-            </div>
-            <div class="container_cafe_principal">
-                <img src="imagens/cafe_sem fundo.png" alt="coffe">
-                <!--  imagem de cafe que ira subir com a tela -->
-            </div class="container_img">
-            
+            </div>      
 
         </section>
+        <section id="cafe_subir">
+            <img data-aos="fade-right" data-aos-duration="3000" src="imagens/cafe_sem fundo.png" alt="coffe">
 
+        </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     </main>
 
-
+  
 
 </body>
 

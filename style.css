@@ -57,7 +57,7 @@ header>picture>img {
 }
 
 header img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     /* Efeito de zoom ao passar o mouse */
 }
 
@@ -78,24 +78,31 @@ nav a:hover::before {
 
 }
 
-/* Estilo para o contêiner da seção */
 section {
     display: flex;
-    justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
-    width: 45%;
-
+    /* Alinha o conteúdo verticalmente */
+    justify-content: space-between;
+    /* Coloca espaço entre o texto e a imagem */
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* Estilo para o contêiner de conteúdo */
 section>.content {
     max-width: 500px;
+    /* Ajuste conforme necessário para dar mais espaço para a imagem */
     text-align: left;
-    margin: 30px auto 0 auto;
-
+    margin-left: 50px;
 }
 
+.content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45%;
+}
 
 .content h2 {
     font-size: 2em;
@@ -153,23 +160,23 @@ p {
     font-weight: 500;
 }
 
-/* .container_cafe_principal {
-    width: 900px;
+#cafe_subir {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 990px;
+    height: 560px;
+    margin: 0%;
     
-    height: 00px;
- 
-    display: flex;
-    justify-content: space-evenly;
     
-    align-items: center;
-
 
 }
 
-img {
-    width: 990px;
-    margin-top: -500px;
-    margin-left: 400px;
-    height: 10;
+/* Estilo para a imagem dentro do contêiner #cafe_subir */
+#cafe_subir img {   
+    margin: 0%;
+    margin-left: 60px;  
+    height: auto;
+    transform: scale(1.4);
 
-} */
+}
